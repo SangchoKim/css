@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css font</title>
+	<style>
+		body,h1,h2{
+			/*font-family: '돋움',dotum, helvetica, sans-serif*/
+			font-family: 'Malgun Gothic', helvetica, sans-serif;
+			font-size: 12px;
+			/*<font family> serif: 명조 | sans-serif: 고딕 | cursive: 필기 | monospace: 고정폭*/
+
+		}
+		h1{
+			font-size: 2.4em;
+			letter-spacing: .1em;
+			/*글자 간격*/
+			text-transform: uppercase;
+			/*<text-transform> uppercase | lowercase | capitalize*/
+			background-color: green;
+		}
+
+		h1 small {
+			font-size: .5em;
+			background-color: lime;
+			vertical-align: baseline;
+			/*top | middle | baseline | bottom*/
+		}
+		address {
+			font-style: normal;
+			/*<font-style> normal | italic | oblique*/
+		}
+		h2 {
+			color: #FF0000;
+			font-variant: small-caps;
+			/*<font-variant> 소문자 -> 대문자*/ 
+			text-decoration: line-through;
+			/*<text-decoration> underline | overline | line-through | none*/
+		}
+		.lead{
+			font-size: 1.2em;
+			font-weight: bold;
+			/*<font weight> bold | bolder | nomal | lighter*/
+			word-spacing: 1em;
+			/*단어 간격*/
+		}
+		.text{
+			line-height: 1.6;
+			/*<line-height> 줄 간격*/
+			text-indent: 1em;
+			/*<text-indent> 들여쓰기 | 내어쓰기*/
+			white-space: nowrap;
+			/*word-sppace처럼 움직임*/
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>css font <small>sample</small></h1>
+		<h2>Style Example (font-variant)</h2>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, minima.</p>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit mollitia recusandae eius magni nesciunt distinctio voluptatum possimus officia, amet dolores, et consequuntur ab odio, magnam iste explicabo error corrupti. Libero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquam, quos explicabo qui nam blanditiis ullam eveniet, dolor id itaque assumenda expedita nesciunt, quisquam eum placeat a autem odio dolorem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit mollitia recusandae eius magni nesciunt distinctio voluptatum possimus officia, amet dolores, et consequuntur ab odio, magnam iste explicabo error corrupti. Libero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquam, quos explicabo qui nam blanditiis ullam eveniet, dolor id itaque assumenda expedita nesciunt, quisquam eum placeat a autem odio dolorem.
+		</p>
+		<hr>
+		<address>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe earum provident pariatur sed dolorum neque porro dolor consectetur dignissimos, similique ut magnam quo non soluta voluptatem consequuntur! Corrupti, omnis, deleniti!
+		</address>	
+	</div>
+</body>
+</html>

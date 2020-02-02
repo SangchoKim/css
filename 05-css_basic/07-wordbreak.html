@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>word-breack, white-space</title>
+	<style>
+		body {
+			font-family: "Malgun Gothic";
+			font-size: 20px;
+		}
+		.content,.content2,.content3 {
+			border: 3px solid black;
+			width: 500px;
+		}
+		.content p {
+			word-break: break-all;
+		}
+		.content2 p {
+			text-align: justify;
+		}
+		.content3 p {
+			text-align: justify;
+			word-break: break-all;
+		}
+		.white1{
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre;
+		}
+		.white2{
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre-wrap;
+		}
+		.white3{
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre-line;
+			/*pre(똑같이 나옴) | nowrap(줄이 안바뀜) | pre-wrap | pre-line */
+		}
+	</style>
+</head>
+<body>
+	<div class="contnet">
+		<p>Loremipsumdolorsitametconsecteturadipisicingelit.Necessitatibussedveroametfugitquivoluptatibusveritatisavelitvoluptasinatquenobisadfugaillumtotam,voluptatesnullaporronatus!Loremipsumdolorsitamet,onsecteturadipisicingelit.Similiquerepellendus</p>
+	</div>
+	<div class="content2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque molestiae tempora, nihil rem consectetur minus esse voluptas ea, inventore obcaecati maxime voluptate. Animi repellat neque qui placeat delectus atque, quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolore natus saepe ipsa veniam quod delectus temporibus sed odio nam incidunt, obcaecati unde eligendi. Aliquam nam vitae voluptatum, hic dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati deleniti dolorum harum necessitatibus earum saepe aspernatur vitae. Nesciunt, quibusdam, commodi.</p>
+	</div>
+	<div class="content3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque molestiae tempora, nihil rem consectetur minus esse voluptas ea, inventore obcaecati maxime voluptate. Animi repellat neque qui placeat delectus atque, quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolore natus saepe ipsa veniam quod delectus temporibus sed odio nam incidunt, obcaecati unde eligendi. Aliquam nam vitae voluptatum, hic dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati deleniti dolorum harum necessitatibus earum saepe aspernatur vitae. Nesciunt, quibusdam, commodi.</p>
+	</div>
+	<hr>
+	<div class="white1">
+		Lorem 
+		ipsum 
+		dolor 
+		sit 
+		amet.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis consequatur ipsa at obcaecati perspiciatis ipsam nesciunt dolorem hic adipisci inventore, quas! Esse incidunt excepturi in eum quod, nulla temporibus?
+	</div>
+	<div class="white2">
+		Lorem 
+		ipsum 
+		dolor 
+		sit 
+		amet.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis consequatur ipsa at obcaecati perspiciatis ipsam nesciunt dolorem hic adipisci inventore, quas! Esse incidunt excepturi in eum quod, nulla temporibus?
+	</div>
+	<div class="white3">
+		Lorem 
+		ipsum 
+		dolor 
+		sit 
+		amet.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis consequatur ipsa at obcaecati perspiciatis ipsam nesciunt dolorem hic adipisci inventore, quas! Esse incidunt excepturi in eum quod, nulla temporibus?
+	</div>
+</html>

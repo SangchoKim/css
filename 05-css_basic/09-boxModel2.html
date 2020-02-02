@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Box model</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.box{
+			/*display inline | block | inline-block */
+
+			display: block;
+		
+			/*top right bottom left*/
+			margin: 20px;
+			padding: 20px;
+			/*padding-left: 20px;*/
+			/*padding: 100px 50px*/ /*top bottom | right left*/ 
+			/*padding: 100px 50px 10px*/ /*top | right left | bottom*/
+			/*padding: 100px 50px 10px 0*/ /*top | right | bottom | left*/
+			
+			/*margin*/
+			/*padding과 같음*/
+			
+			/*border-style: silid | dashed | dotted | double | inset | outset | ridge | groove */
+			/*border-color: */
+			/*border-width: */
+
+			border-bottom: 5px solid black;
+			border-style: solid dashed;
+			background-color: lime;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+	</div>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+	</div>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+	</div>
+	<span class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim delectus, porro! Dignissimos tenetur rerum veniam, recusandae error. Perspiciatis minima, voluptatum incidunt, temporibus ad in explicabo a expedita doloribus laborum blanditiis?
+	</span>
+</body>
+</html>

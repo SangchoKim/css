@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>문자참조</title>
+	<style>
+		.desc{
+			width: 636px;
+			height: 542px;
+			background: url(img/couple-260899_1920.jpg);
+			text-indent: -9999em;
+		}
+	</style>
+</head>
+<body>
+
+<h1>문자참조 예제</h1>
+
+<p>Lorem ipsum &lt;dolor sit amet, consectetur adipisicing elit.&gt; Ea, maiores, quis! Magnam facilis recusandae ipsum error doloribus architecto at omnis sit quo. Provident corporis eum facilis, est ea deleniti ipsam.</p>
+
+<p>copyright &copy;</p>
+<hr>
+
+<h1>dfn, abbr, cite, small</h1>
+
+<p><dfn title="본문의 내용을 정의해주는 문장을 쓴다.">Html</dfn></p> <!-- 단어의 정의 -->
+<p>월드 와이드 웹 컨소시엄(<abbr title="Word Wide Web Consortium">W3C</abbr>)</p> <!-- 단어의 축약 -->
+<p><cite>작품의 제목들만 사용</cite></p> <!-- 이태릭체로 표현됨 -->
+<p>값: 50,000원 <small>(부가세 별도)</small></p> <!-- 부가적인 설명쓸때 -->
+<hr>
+
+<h1>rudy, rt, time</h1>
+
+<h1><ruby>家和萬事成<rt>가화만사성</rt></ruby></h1>
+<h1>
+	<ruby>
+		家<rt>가</rt>
+		和<rt>화</rt>
+		萬<rt>만</rt>
+		事<rt>사</rt>
+		成<rt>성</rt>
+	</ruby>
+</h1>
+<hr>
+<p><time datetime="2020-01-18">오늘</time>은 친구 생일이라서 일찍 들어가 봐야 합니다.</p>
+<p>논문 발표일은 <time>2020-01-18</time> 입니다.</p>
+
+<hr>
+<h1>address, blockquote, pre</h1>
+
+<address>서울시 성북구 아리랑로3길 30</address>
+<blockquote>
+	<p>인용문을 쓸 때 사용하는 태그 blockquote</p>
+</blockquote>
+
+<pre>
+Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit. 
+Sequi quasi blanditiis expedita suscipit id iure illo recusandae aliquam quam natus,
+quidem laudantium, cumque repellat officiis veritatis consequuntur ipsa. 
+Quia, asperiores.
+</pre>
+<hr>
+
+<h1>목록 요소, ul, ol, li, dl, dt, dd</h1>
+
+<ul>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem ipsum dolor sit amet</li>
+</ul>
+<ol type="A">
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem ipsum dolor sit amet</li>
+</ol>
+<ul>
+	<li><a href="#">menu 1</a>
+		<ul>
+			<li><a href="#">submenu 1</a></li>
+			<li><a href="#">submenu 2</a></li>
+			<li><a href="#">submenu 3</a></li>
+			<li><a href="#">submenu 4</a></li>
+		</ul>
+	</li>
+	<li><a href="#">menu 2</a>
+	<li><a href="#">menu 3</a>
+	<li><a href="#">menu 4</a>
+</ul>
+<hr>
+<dl>
+	<dt><strong>인라인 글귀만 가능</strong></dt>
+	<dd>
+		<p>
+			아무거나 다 가능, 들여쓰기 됨
+		</p>
+	</dd>
+</dl>
+<dl>
+	<dt>Lorem.</dt>
+	<dd>Lorem ipsum dolor.</dd>
+	<dd>Lorem ipsum</dd>
+	<dd>Lorem ipsum dolor</dd>
+	<dd>Lorem ipsum dolor.</dd>
+</dl>
+<hr>
+
+<h1>테이블 요소, table, td, tr, th, caption, thead, tbody, tfoot, </h1>
+
+<table border>
+	<tr> <!-- 테이블로우 -->
+		<td>cell</td> 
+		<td>cell</td>
+		<td>cell</td>
+		<td>cell</td>
+	</tr>
+	<tr>
+		<td>cell</td>
+		<td>cell</td>
+		<td>cell</td>
+		<td>cell</td>
+	</tr>
+</table>
+<hr>
+
+<!-- socope: 제목이 나타내는 범위(필수) 
+	socope= col || row || colgroup || rowgroup
+ -->
+
+ <!-- colspan: 컬럼이나 로우를 합칠때 
+	colspan= rowspan || colspan 
+ -->
+<table border>
+	<caption>table caption</caption>
+	<thead>
+		<tr>
+			<th scope="col">제목 1</th>
+			<th scope="col">제목 2</th>
+			<th scope="col">제목 3</th>
+			<th scope="col">제목 4</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="3">본문 1</td>
+			<td>본문 2</td>
+			<td>본문 3</td>
+			<td>본문 4</td>
+		</tr>
+		<tr>
+			<!-- <td>본문 5</td> -->
+			<td>본문 6</td>
+			<td>본문 7</td>
+			<td>본문 8</td>
+		</tr>
+		<tr>
+			<!-- <td>본문 5</td> -->
+			<td>본문 6</td>
+			<td>본문 7</td>
+			<td>본문 8</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th scope="row">결과 1</th>
+			<td colspan="3">...</td>
+			<!-- <td >...</td> -->
+			<!-- <td >...</td> -->
+		</tr>
+	</tfoot>
+</table>
+<hr>
+
+<h1>anchore, a태그</h1>
+
+<ul>
+	<li><a href="http://daum.net/">daum</a></li>
+	<li><a href="http://daum.net/" title="다음으로 이동">daum</a></li>
+	<li><a href="http://daum.net/" target="_blank">daum 새창(새 탭)</a></li>
+	<li><a href="img/couple-260899_1920.jpg" download>그림 1</a></li>
+	<li><a href="mailto:wjdrms1919@gmail.com">wjdrms1919@gmail.com</a></li>
+</ul>
+
+<!-- 
+tabindex: a, input, button, select, textarea .... -> tab을 눌렀을 때 가장 먼저 포커스 되는 것을 사용자 지정할 때 
+accesskey: alt + w(크롬), alt + w + enter(IE) 
+-->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus deserunt fuga nemo nam, laudantium labore, earum facilis eius commodi, quos sequi quisquam accusamus ut tenetur. Est fuga, voluptas itaque consequuntur.
+<a href="http://wah.or.kr" accesskey="w">웹접근성연구소</a>
+</p>
+
+<hr>
+
+<h1>Image 요소, img</h1>
+<p><img src="img/couple-260899_1920.jpg" alt="커플" longdesc="그림을 설명해줄 파일경로 입력"></p>
+<hr>
+<div class="desc">
+	<h5></h5>
+	<ul></ul>
+</div>
+<hr>
+
+<!-- 
+	<area>
+	shape(모양)= rect || circle || poly 
+	coords(범위)= 좌표  
+
+-->
+
+<h1>이미지 맵, img, map, area</h1>
+<p>
+	<img src="img/map.jpg" usemap="#map" alt="이미지맵">
+	<map name="map" id="map">
+		<area shape="rect" coords="15,25,218,84" href="http://naver.com/" alt="naver">
+		<area shape="circle" coords="308,55,50" href="http://daum.net/" alt="daum">
+		<area shape="poly" coords="550,34,570,48,570,65,550,78,532,65,532,48" href="http://google.com" alt="google">
+	</map>
+</p>
+<hr>
+
+<h1>iframe</h1>
+
+<iframe src="img/map.jpg" width="800" height="600" frameborder="1"></iframe>
+<iframe src="http://daum.net/" sandbox="sandbox" width="800" height="600" frameborder="1" title="다음으로 이동"></iframe>
+
+<hr>
+
+<h1>폼 컨트롤 알아보기</h1>
+	<form action="#" method="get">
+		<fieldset>
+			<legend>fieledset legend</legend>
+			<p>
+				<label for="name">이름</label>
+				<input type="text" id="name" name="name" placeholder="name">
+			</p>
+			<p>
+				<label for="id">아이디</label>
+				<input type="text" id="id" name="id" placeholder="id">
+				<input type="button" value="아이디중복확인">
+			</p>
+			<p>
+				<label for="pw">비밀번호</label>
+				<input type="password" id="pw" name="pw" placeholder="password">
+			</p>
+			<p>
+				<label for="comment">의견</label>
+				<textarea name="comment" id="comment" cols="30" rows="4"></textarea>
+			</p>
+			<p>
+				<label for="usersel">지역선택</label>
+				<select name="usersel" id="usersel">
+					<option value="1">서울</option>
+					<option value="2">부산</option>
+					<option value="3">광주</option>
+					<option value="4">대구</option>
+					<option value="5">대전</option>
+				</select>
+			</p>
+			<p>
+				<span>성별:</span>
+				<label for="male">남자</label>
+				<input type="radio" id="male" name="choice" value="male">
+				<label for="female">여자</label>
+				<input type="radio" id="female" name="choice" value="female">
+			</p>
+			<!-- <p>
+				<span>취미는?</span>
+				<label for="trip">여행</label>
+				<input type="checkbox" id="trip" name="trip" value="trip">
+				<label for="book">독서</label>
+				<input type="checkbox" id="book" name="book" value="book">
+				<label for="movie">영화감상</label>
+				<input type="checkbox" id="movie" name="movie" value="movie">
+			</p> -->
+			<p>
+				<span>취미는?</span>
+				<label>여행 <input type="checkbox" name="trip" value="trip"></label>
+				<label>독서 <input type="checkbox" name="book" value="book"></label>
+				<label>영화감상 <input type="checkbox" name="movie" value="movie"></label>
+			</p>
+		</fieldset>
+		<p>
+			<!-- <input type="submit" value="전송"> -->
+			<button type="submit">전송</button>
+			<!-- <input type="reset" value="취소"> -->
+			<button type="reset">취소</button>
+		</p>
+	</form>
+<hr>
+</body>
+</html>

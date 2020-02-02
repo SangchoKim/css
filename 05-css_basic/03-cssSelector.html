@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>scc selector</title>
+	<style>
+		body{
+			font-size: 12px;
+		}
+		h1, p {
+			text-decoration: underline;
+		}
+		.lead{
+			color: :green;
+		}
+		#lead{
+			background: lime;
+		}
+		#header em {
+			background-color: orange;
+		}
+		#header > p{
+			border: 3px solid black;
+		}
+		#header p + p {
+			background-color: :yellow;
+		}
+		.list li + li{
+			background-color: lightblue;
+		}
+		a[title] {
+			background-color: purple;
+			color: white;
+		}
+		a[herf = 'http://daum.net/']{
+			background-color: black;
+			color: yellow;
+		}
+		a[herf ^= 'http://']{
+			background-color: black;
+			color: red;
+		}
+		a[href $= '.pdf']{
+			background-color: yellow;
+		}
+		li[title *= 'sam']{
+			background-color: lime;
+		}
+		li[title ~= 'title']{
+			background-color: lime;
+		}
+		li[lang |= 'en']{
+			border-bottom: 2px solid red;
+		}
+	</style>
+</head>
+<!-- 
+	1. CSS는 상속개념이 있음
+	2. id는 #, class . 
+	3. ,(쉼표)는 다중 선택자
+	4. 공백은 자손 선택자 
+	5. > 자식 선택자
+	6. + 인접 형제 선택자 
+	7. [] 특정 속성 선택자 -> a[title]
+	8. [=] 특정 속성 선택자 중 비교 -> a[herf = 'http://daum.net/']
+	9. [^=] 특정 속성 선택자 중 prefix 비교 -> a[herf ^= 'http://']
+	10 [$=] 특정 속성 선택자 중 확장자 비교 -> a[href $= '.pdf']
+	11. [*=] 특정 속성 선택자 중 일부만 비교 => li[title *= 'sam']
+	12. [|=] 특정 속성 선택자 중 언어만 비교 => li[lang |= 'en']
+-->
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>css <em>selector</em></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, praesentium.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, praesentium.</p>
+		</div>
+		<div id="contents">
+			<p id="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, dolores.</p>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nam, excepturi nesciunt. Ipsam, aliquam quia nihil repellendus, nam aperiam quisquam consectetur laboriosam officiis saepe magnam. Illum iure minus harum, porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur enim natus consequatur id eveniet, adipisci possimus cum, officia doloremque, asperiores quod. Asperiores magni, veritatis sapiente nam eum sint et tempora.
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dolorum, quos maxime modi excepturi odio dolor et, delectus quam accusantium voluptatem, natus illum minus maiores nisi ullam magni, labore incidunt.
+			</p>
+			<ol class="list">
+				<li lang="en">Lorem ipsum dolor sit.</li>
+				<li lang="zh">Lorem ipsum dolor sit.</li>
+				<li lang="ja">Lorem ipsum dolor sit.</li>
+				<li>Lorem ipsum dolor sit.</li>
+				<li>Lorem ipsum dolor sit.</li>
+			</ol>
+			<ul>
+				<li><a href="http://daum.net/">daum</a></li>
+				<li><a href="http://naver.com/">naver</a></li>
+				<li><a href="milto:help@host.co.kr" title="help mail">help</a></li>
+				<li><a href="file/download.pdf">download</a></li>
+				<li title="some text sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, a.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, a.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, a.</li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloribus repellat animi a nostrum eaque quos dolores temporibus labore voluptate qui repellendus, sed debitis consectetur nulla ipsum dicta iusto doloremque.</p>
+		</div>
+	</div>
+</body>
+</html>

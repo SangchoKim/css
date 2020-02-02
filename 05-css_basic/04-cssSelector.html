@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css selector2</title>
+	<style>
+		/*a:link{
+			color: green;
+			text-decoration: underline;
+		}
+		a:visited{
+		 	color: gray;
+		 	text-decoration: underline;
+		}
+		a:hover{
+			color: red;
+			text-decoration: underline;
+		}
+		a:active{
+			color: orange;
+			text-decoration: underline;
+		}
+		a:focus{
+			background-color: red;
+		}*/
+		body{
+			color: #333;
+		}
+		a {
+			color: #888;
+			text-decoration: none;
+		}
+		a:hover, a:active, a:focus {
+			color: red;
+			text-decoration: underline;
+		}
+		.lead:first-line{
+			background-color: lime;
+		}
+		.lead:first-letter{
+			font-size: 5em;
+		}
+		h1:before{
+			content: "Before area"
+			color: blue;
+		}
+		h1:after{
+			content: "After area"
+			color: red;
+		}
+		div{
+			background-color: lime !important;
+		}
+		.sample{
+			background-color: green
+		}
+		#sample{
+			background-color: purple;
+		}
+	</style>
+</head>
+<!-- 
+	<css 선택자2> 
+	a:link = link로 선언되어 있는 요소 
+	a:visited = link를 통해 한번이라도 접속했던 경우 
+	a:hover = 마우스를 올렸을 때 
+	a:active = 마우스로 눌렀을 때 
+	a:focus = tab 키를 눌렀을 때 
+	.lead:first-line = 라인 중 첫번째 라인만 선택할 때 
+	.lead:first-letter= 라인 중 첫번째 글자만 선택할 때
+	h1:before= 컨텐츠에 앞쪽 
+	h1:after= 컨텐츠에 뒤쪽
+
+	<선택자 우선순위>
+		!important > inlineStyle > id > class > tag  
+-->
+<body>
+	<h1>css selector2</h1>
+	<p class="lead"><a href="http://naver.com/">naver</a><a >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sed nostrum ex dolore nam harum tempore assumenda amet. Debitis qui perferendis numquam, voluptas ea repellendus cum accusantium dicta facilis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quod ipsa, cupiditate quaerat cum dignissimos dolorum consequatur ducimus minus vero, magnam provident et inventore alias fugiat placeat incidunt nihil perferendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, facere. At vitae eveniet itaque eligendi consequatur distinctio a sed facilis repudiandae! Adipisci officiis doloribus autem repellendus, architecto placeat at impedit.</a></p>
+
+	<div class="sample" id="sample">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ea, enim eveniet perferendis quasi sequi, accusamus, tempore ad voluptas possimus similique quo ullam est quis consectetur. Quisquam magni, animi accusamus!
+	</div>
+	
+</body>
+</html>

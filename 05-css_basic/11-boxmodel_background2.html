@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<style>
+		body{
+			background: url(img/twt.png) fixed no-repeat 90% 20px;
+			/*background-attachment: fixed;*/
+		}
+		.box {
+			width: 600px;
+			padding: 20px;
+			border: 3px solid black;
+			background: url(img/couple-260899_1920.jpg) no-repeat 50% 50%;
+ 		}
+ 		.box2 {
+			/*background-size: 100% auto;*/ /*가로 세로*/
+			/*background-size: auto 100%;*/
+			background-size: cover; /*cover = 자동  css3*/
+			background-clip: content-box; /* content 영역에만 그림이 짤려서 보임  css3*/	
+			background-origin: content-box; /* content 영역에만 그림 원본이 보임  css3*/		
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aut ut temporibus, repudiandae laboriosam incidunt, mollitia amet velit iusto minima enim dolor inventore eius, non autem vitae sit atque. Quia enim doloremque aliquid quibusdam dolore praesentium error molestiae necessitatibus molestias quo, commodi eius dolorem deserunt dignissimos est magnam veniam, deleniti fuga beatae ducimus fugit sequi natus facilis. Laborum dolorem quisquam, dolorum sunt magni impedit fuga, ipsa quo cupiditate debitis deserunt corporis cum. Maiores distinctio fuga voluptas ad eum officia libero excepturi ratione pariatur, quisquam animi voluptatibus, placeat cumque dolorem mollitia iusto nam velit non soluta, perspiciatis adipisci nostrum aperiam.
+	</div>
+	<div class="box box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aut ut temporibus, repudiandae laboriosam incidunt, mollitia amet velit iusto minima enim dolor inventore eius, non autem vitae sit atque. Quia enim doloremque aliquid quibusdam dolore praesentium error molestiae necessitatibus molestias quo, commodi eius dolorem deserunt dignissimos est magnam veniam, deleniti fuga beatae ducimus fugit sequi natus facilis. Laborum dolorem quisquam, dolorum sunt magni impedit fuga, ipsa quo cupiditate debitis deserunt corporis cum. Maiores distinctio fuga voluptas ad eum officia libero excepturi ratione pariatur, quisquam animi voluptatibus, placeat cumque dolorem mollitia iusto nam velit non soluta, perspiciatis adipisci nostrum aperiam.
+	</div>
+</body>
+</html>

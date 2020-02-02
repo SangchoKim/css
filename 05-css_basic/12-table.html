@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+	<style>
+		.tbl {
+			/*border: 1px solid black;*/
+			width: 800px;
+			border-collapse: collapse; /*cell과 cell 사이의 경계를 겹쳐준다.*/
+			table-layout: fixed; /* table layout을 고정한다. */
+
+		}
+		.tbl th, .tbl td{
+			border: 1px solid gray;
+
+		}
+		.tbl caption {
+			caption-side: bottom;
+		}
+		.tbl .ex1, .tbl .ex2 {
+			empty-cells: hide; /* border-collapse상에서는 표현 (X) */
+		}
+
+	</style>
+</head>
+<body>
+	<table class="tbl">
+		<caption>table caption</caption>
+		<thead>
+			<tr>
+				<th scope="col">tabel header cell1-1</th>
+				<th scope="col">tabel header cell1-2</th>
+				<th scope="col">tabel header cell1-3</th>
+				<th scope="col">tabel header cell1-4</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>table data cell1-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quo, rerum officiis numquam? Quidem officia maiores error odit magni optio aut, sint accusantium amet et quam inventore quo in. Voluptatum.</td>
+				<td>table data cell1-2</td>
+				<td>table data cell1-3</td>
+				<td>table data cell1-4</td>
+			</tr>
+			<tr>
+				<td>table data cell2-1</td>
+				<td>table data cell2-2</td>
+				<td>table data cell2-3</td>
+				<td>table data cell2-4</td>
+			</tr>
+			<tr>
+				<td>table data cell3-1</td>
+				<td>table data cell3-2</td>
+				<td>table data cell3-3</td>
+				<td>table data cell3-4</td>
+			</tr>
+			<tr>
+				<td>table data cell4-1</td>
+				<td>table data cell4-2</td>
+				<td class="ex1"></td>
+				<td class="ex2"></td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

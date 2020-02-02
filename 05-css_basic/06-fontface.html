@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>font-Face</title>
+	<style>
+		/*
+		<구글 웹 폰트>
+		font-family: 'Acme', sans-serif;
+		font-family: 'Exo', sans-serif;
+		font-family: 'Courgette', cursive;
+		*/
+		@import url('https://fonts.googleapis.com/css?family=Acme|Courgette|Exo:200i&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @font-face{
+        font-family: NGothic;
+	            src:url(fonts/NanumGothic.eot);
+	            src:url(fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
+	                url(fonts/NanumGothic.woff) format('woff'),
+	                url(fonts/NanumGothic.ttf) format('truetype')
+        }
+        h1{
+        	font-family: 'Courgette', cursive;
+        }
+        body{
+            font-size: 20px;
+        }
+        .nanum {
+        	font-family: NGothic, sans-serif;
+        }
+        .lead {
+        	font-family: 'Exo', sans-serif
+        }
+        .lead2{
+        	font-family: 'Acme', sans-serif
+        }
+        .noto1{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 100;
+        }
+        .noto2{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 200;
+        }
+        .noto3{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 300;
+        }
+        .noto4{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 400;
+        }
+        .noto5{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 500;
+        }
+        .noto6{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 600;
+        }
+        .noto7{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 700;
+        }
+        .noto8{
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+	<h1>@font-face</h1>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, blanditiis reiciendis impedit numquam exercitationem iusto illo tempore recusandae nisi, quas ducimus ad totam quae suscipit ipsum similique, libero iste dicta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam nemo quis ex harum sed hic ut, pariatur nam quo officiis eum quam illo veniam nesciunt, recusandae assumenda ducimus ipsam.</p>
+	<p class="lead2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, blanditiis reiciendis impedit numquam exercitationem iusto illo tempore recusandae nisi, quas ducimus ad totam quae suscipit ipsum similique, libero iste dicta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam nemo quis ex harum sed hic ut, pariatur nam quo officiis eum quam illo veniam nesciunt, recusandae assumenda ducimus ipsam.</p>
+	<p class="nanum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, blanditiis reiciendis impedit numquam exercitationem iusto illo tempore recusandae nisi, quas ducimus ad totam quae suscipit ipsum similique, libero iste dicta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam nemo quis ex harum sed hic ut, pariatur nam quo officiis eum quam illo veniam nesciunt, recusandae assumenda ducimus ipsam.</p>
+	<p>서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.
+	해당 서체가 없는 경우에 그 서체를 서버에 올려서 @font-face 에 경로를 지정하면 해당 서체를 표현할 수 있음.
+	단, 서체의 용량이 작지 않으므로 최소한의 서체만 연결하고 대부분은 기본 서체를 지원하는 것이 좋음.
+	서체를 지원하는 브라우저가 각기 다른 확장자를 지원하므로 최소 두가지의 확장자를 지원해야 문제가 없음. </p>
+	<p class="nanum">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.
+	해당 서체가 없는 경우에 그 서체를 서버에 올려서 @font-face 에 경로를 지정하면 해당 서체를 표현할 수 있음.
+	단, 서체의 용량이 작지 않으므로 최소한의 서체만 연결하고 대부분은 기본 서체를 지원하는 것이 좋음.
+	서체를 지원하는 브라우저가 각기 다른 확장자를 지원하므로 최소 두가지의 확장자를 지원해야 문제가 없음. </p>
+	<p class="noto1">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto2">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto3">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto4">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto5">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto6">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto7">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+	<p class="noto8">서체는 그 웹페이지를 보는 사람의 디바이스에 해당 서체가 있어야 제대로 표현 됨.</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			width: 800px;
+			margin: 0 auto;
+			/*margin 0 auto -> 정가운데 */
+			font: 12px 'Malgun Gothic', sans-serif;
+			/*font: weight style avriant size/line-height family;*/
+			/*font: size family; 필수로 넣어야 함*/
+		}
+
+		.wrap{
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		.wrap h1 {
+			padding: 15px 0;
+		}
+		.wrap .thumb {
+			float: left; /*left | right*/ 
+			margin: 15px 0 15px 0;
+		}
+		.wrap .text {
+			margin-left: 115px;
+			background-color: lime;
+		}
+		.wrap p{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h1>float example</h1>
+		<p class="thumb"><img src="http://placehold.it/100x120?text=Profile" alt=""></p>
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident in voluptatibus placeat aspernatur temporibus, voluptatum, cupiditate quia, quasi vero officiis natus optio voluptates culpa ullam possimus. Velit voluptas iste numquam, ipsa, ex adipisci corrupti doloribus in quibusdam dignissimos, ad distinctio quasi sequi quod quo minima. Assumenda consectetur necessitatibus iusto aliquid aut ex consequuntur laudantium deserunt quod, nesciunt, excepturi accusamus esse impedit iste nulla id non quam a enim, sint aspernatur illum sapiente. Voluptates praesentium numquam sapiente officiis dolore explicabo nobis. Quae distinctio iusto, sint ut non iste pariatur minus qui praesentium dolorem eaque quam vel ipsum obcaecati, commodi soluta quis!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident in voluptatibus placeat aspernatur temporibus, voluptatum, cupiditate quia, quasi vero officiis natus optio voluptates culpa ullam possimus. Velit voluptas iste numquam, ipsa, ex adipisci corrupti doloribus in quibusdam dignissimos, ad distinctio quasi sequi quod quo minima. Assumenda consectetur necessitatibus iusto aliquid aut ex consequuntur laudantium deserunt quod, nesciunt, excepturi accusamus esse impedit iste nulla id non quam a enim, sint aspernatur illum sapiente. Voluptates praesentium numquam sapiente officiis dolore explicabo nobis. Quae distinctio iusto, sint ut non iste pariatur minus qui praesentium dolorem eaque quam vel ipsum obcaecati, commodi soluta quis!</p>
+		</div>
+	</div>
+</body>
+</html>

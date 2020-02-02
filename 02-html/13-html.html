@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5 form</title>
+</head>
+<body>
+<h1>html5에서 추가된 폼 컨트롤과 속성들</h1>
+
+<!-- 
+	html 중요 속성들 
+	novalidate: 문법자동검사 취소 
+	disabled: 죽은상태
+	placeholder: 힌트제공
+	autofocus: 커서를 깜빡거릴 수 있도록
+	required: 필수입력 항목
+	autocomplete: 자동완성
+-->
+
+<form action="#" method="post" novalidate>
+	<fieldset>
+		<legend>html5 form</legend>
+		<p>
+			<label for="username">이름</label>
+			<input type="text" id="username" name="username" placeholder="name" autofocus autocomplete="off">
+		</p>
+		<p>
+			<label for="usermail">이메일</label>
+			<input type="email" id="usermail" name="usermail" placeholder="email" required>
+		</p>
+		<p>
+			<label for="userurl">웹사이트</label>
+			<input type="url" id="userurl" name="userurl" placeholder="url" disabled>
+		</p>
+		<p>
+			<label for="order">주문수량</label>
+			<input type="number" id="order" name="order" min="1" max="99">
+			<span>개</span>
+		</p>
+		<p>
+			<label for="userrange">길이</label>
+			<input type="range" id="userrange" min="0" max="100" value="30" name="userrange" step="10">
+		</p>
+		<p>
+			<label for="userdate">제출일</label>
+			<input type="date" id="userdate" name="userdate" min="2020-01-01" max="2020-12-31" value="2020-01-18">
+		</p>
+		<p>
+			<label for="usercolor">색상선택</label>
+			<input type="color" id="usercolor" name="usercolor" value="#ff0000">
+		</p>
+		<p>
+			<label for="usertel">연락처</label>
+			<input type="tel" id="usertel" name="usertel"  >
+		</p>
+	</fieldset>
+	<input type="submit" value="Send">
+</form>
+</body>
+</html>

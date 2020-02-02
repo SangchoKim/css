@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Box model</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*
+		boxmodles
+			constent width / height
+			border 
+			padding
+			margin
+
+		*/
+		.box{
+			/*border: 5px solid black;*/
+			/*padding: 20px;*/
+			margin: 30px;
+			background-color: lime;
+			width: 600px;
+		}
+		.box2{
+			border: 5px solid black;
+			padding: 20px;
+		}
+		.box3{
+			box-sizing: border-box; /*css3 <--- IE8,7,...(X)*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+	</div>
+	<div class="box box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+	</div>
+	<div class="box box2 box3">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam explicabo dolorem similique, suscipit quas repudiandae illum reiciendis. Incidunt doloremque, possimus, quod debitis necessitatibus culpa tenetur consequatur dignissimos optio nostrum.
+	</div>
+</body>
+</html>
