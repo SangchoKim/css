@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Positon</title>
+	<style>
+		 /*relative | absolute | fixed | static*/
+		
+		/*
+		fixed: 고정위치, 무조건 가장 바깥쪽이 기준
+		relative: 보통 absolute를 감싸는 용도로 사용
+		absolute: relative 기준으로 위치 적용 or 상위 박스 기준으로 겹칠때 
+		*/
+
+		.box {
+			width: 400px;
+			border:5px solid  black;
+			padding: 20px;
+			background-color: rgba(255,0,0,.5);
+			font: 12px/1.6 verdana, sans-serif;
+		}
+		.box:first-letter {
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.area {
+			position: relative;
+			width: 800px;
+			margin: 0 auto;
+			border: 5px dashed red;
+		}
+		.a{
+			position: relative;
+			left: 0;
+			top: 0;
+			z-index: 1;  /*absolute 가 여러개인 경우에 어떤게 가장 앞으로 나올 수 있는지*/
+			background-color: rgba(255,0,0,.5);
+		}
+		.b{
+			position: relative;
+			left: 50px;
+			margin-top: -200px
+			background-color: rgba(0,255,0,.5);
+		}
+		.c{
+			position: relative;
+			left: 100px;
+			margin-top: -200px
+			background-color: rgba(0,0,255,.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="area">
+		<div class="box a">A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque, quidem perspiciatis, quia natus impedit quis tenetur dolor voluptates fugit sit, voluptatem, architecto amet consectetur in atque earum suscipit fugiat!</div>
+		<div class="box b">B Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque, quidem perspiciatis, quia natus impedit quis tenetur dolor voluptates fugit sit, voluptatem, architecto amet consectetur in atque earum suscipit fugiat!</div>
+		<div class="box c">C Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque, quidem perspiciatis, quia natus impedit quis tenetur dolor voluptates fugit sit, voluptatem, architecto amet consectetur in atque earum suscipit fugiat!</div>
+	</div>
+	<hr>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, illo! Beatae veniam repudiandae facilis placeat assumenda, modi accusantium sapiente possimus laborum, iure dolorem iste eveniet provident earum recusandae nesciunt sint quos! Voluptatum porro alias, accusantium at ipsam minus quia numquam consequatur. Libero dicta recusandae quibusdam eos vero, eaque dolor id non sapiente quaerat ipsam, neque illum est mollitia quia unde eveniet adipisci debitis sint odio ipsum! Totam necessitatibus officiis atque alias laudantium ratione quam voluptatum suscipit perferendis nostrum dolor mollitia pariatur neque, blanditiis quod distinctio ipsam illum, aliquam asperiores reprehenderit. Optio labore laboriosam repudiandae illo minima doloremque iure, ducimus excepturi.</p>
+</body>
+</html>
